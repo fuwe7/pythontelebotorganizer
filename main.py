@@ -38,6 +38,5 @@ def incbyfunc(message):
     new_value=int(message.text)
     cnt += new_value
 
-
 bot.infinity_polling()
 
