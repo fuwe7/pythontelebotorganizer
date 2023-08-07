@@ -1,5 +1,5 @@
 import os
-from background import keep_alive #импорт функции для поддержки работоспособности
+from background import keep_alive 
 import pip
 pip.main(['install', 'pytelegrambotapi'])
 import telebot
@@ -43,5 +43,5 @@ def incbyfunc(message):
     new_value=int(message.text)
     cnt += new_value
 
-keep_alive()#запускаем flask-сервер в отдельном потоке. Подробнее ниже...
-bot.polling(non_stop=True, interval=0) #запуск бота
+keep_alive()
+bot.polling(non_stop=True, interval=0) 
